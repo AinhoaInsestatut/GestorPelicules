@@ -1,0 +1,155 @@
+/* Importamos la tipografía Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+#content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario de actores */
+form {
+    background-color: #e0f2ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9fafb;
+}
+
+form input[type="submit"] {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+/* Estilo de la tabla de actores */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2563eb;
+    color: white;
+}
+
+table td img {
+    width: 50px;
+    border-radius: 4px;
+}
+
+table td button {
+    background-color: #f87171;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+table td button:hover {
+    background-color: #dc2626;
+}
+
+/* Buscador de actores */
+#searchActorForm {
+    margin-top: 30px;
+}
+
+#searchActor {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#searchActorForm button {
+    padding: 10px 20px;
+    background-color: #4ade80;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#searchActorForm button:hover {
+    background-color: #22c55e;
+}
+
+/* Respuestas de éxito o error */
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+}
+
+.alert.success {
+    background-color: #4ade80;
+}
+
+.alert.error {
+    background-color: #f87171;
+}

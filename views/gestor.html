@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Películas</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="content">
+    <h1>Gestión de Actores y Películas</h1>
+
+    <!-- Formulario para crear un nuevo actor -->
+    <h2>Crear nuevo actor/actriz</h2>
+    <form id="actorForm" method="POST">
+      <label for="actorName">Nombre Actor:</label>
+      <input type="text" id="actorName" name="actorName" required><br><br>
+
+      <label for="actorCountry">País:</label>
+      <select id="actorCountry" name="actorCountry" required>
+        <!-- Los países serán insertados dinámicamente desde el servidor -->
+      </select><br><br>
+
+      <label for="actorImage">Imagen URL:</label>
+      <input type="text" id="actorImage" name="actorImage"><br><br>
+
+      <input type="submit" value="Crear Actor">
+    </form>
+
+    <hr>
+
+    <!-- Sección para mostrar los actores -->
+    <h2>Lista de Actores</h2>
+    <table id="actorList">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Imagen</th>
+          <th>País</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Los actores serán insertados dinámicamente desde el servidor -->
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Buscador de actores -->
+    <h2>Buscar Actor</h2>
+    <form id="searchActorForm">
+      <input type="text" id=
